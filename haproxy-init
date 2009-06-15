@@ -17,7 +17,7 @@ PIDFILE=/var/run/haproxy.pid
 CONFIG=/etc/haproxy/haproxy.cfg
 CONFIG_DIR=/etc/haproxy
 HAPROXY=/usr/local/sbin/haproxy
-HAPROXY_CONFIG=/usr/local/sbin/haproxy-config
+HAPROXY_CONFIG=/usr/local/sbin/haproxy-config.py
 EXTRAOPTS=
 
 test -x $HAPROXY || exit 0
