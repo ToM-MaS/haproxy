@@ -107,7 +107,7 @@ def create_config(config_dir, output_file):
                 output.write("\t%s" %  line)
             f.close()
     
-    complex_types = ["listen", "frontend", "backend"]
+    complex_types = ["userlist", "listen", "frontend", "backend"]
     # the other configuration directives use sub directories to split up
     # the building blocks
     for t in complex_types:
@@ -116,6 +116,7 @@ def create_config(config_dir, output_file):
             #   HAPROXY     DIRECTORY
             #   backend     /backends
             #   frontend    /frontends
+            #   userlist    /userlists
             #  (listen ist the same on both)
             tdir = os.path.join(config_dir, "%ss" % t)
         else:
